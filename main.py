@@ -1,5 +1,5 @@
 def main():
-  return "hello world"
+  return "Grüßgöddle"
 
 def handler(event, ctx):
   return event
@@ -7,5 +7,5 @@ def handler(event, ctx):
 print(
   main(),
   "from my push",
-  handler({"message": "this is my jenkins test"}, None)
+  handler({"message": "Habe die Ehre, der Test läuft durch"}, None)
 )
