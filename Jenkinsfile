@@ -1,9 +1,11 @@
 pipeline {
     agent {
-        node {
-            label "docker-agent-python"
+        docker {
+            image 'python:3.8' // Ein Image, das wahrscheinlich Git enthält
+            label 'docker-agent-python'
         }
     }
+        
     stages {
         stage('Preparation') {
             steps {
