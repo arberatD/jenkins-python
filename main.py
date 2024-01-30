@@ -7,5 +7,5 @@ def handler(event, ctx):
 print(
   main(),
   "from my push",
-  handler({"message": "Habe die Ehre, der Test läuft durch, zum zweiten Mal"}, None)
+  handler({"message": "Habe die Ehre, der Test läuft durch, zum dritten Mal"}, None)
 )
